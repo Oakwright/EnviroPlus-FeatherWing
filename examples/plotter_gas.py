@@ -26,9 +26,9 @@ blue = 0x0000FF
 splotter = plotter.ScreenPlotter([red, green, blue], max_value=3.3, min_value=0.5, top_space=10)
 
 # add a colour coded text label for each reading
-splotter.group.append(label.Label(terminalio.FONT, text="OX:{}", color=red, x=0, y=5, max_glyphs=15))
-splotter.group.append(label.Label(terminalio.FONT, text="RED:{}", color=green, x=50, y=5, max_glyphs=15))
-splotter.group.append(label.Label(terminalio.FONT, text="NH3:{}", color=blue, x=110, y=5, max_glyphs=15))
+splotter.group.append(label.Label(terminalio.FONT, text="OX:{}", color=red, x=0, y=5))
+splotter.group.append(label.Label(terminalio.FONT, text="RED:{}", color=green, x=50, y=5))
+splotter.group.append(label.Label(terminalio.FONT, text="NH3:{}", color=blue, x=110, y=5))
 
 # from https://stackoverflow.com/a/49955617
 def human_format(num, round_to=0):
