@@ -28,7 +28,7 @@ import time
 
 import board
 import busio
-import adafruit_bme280
+from adafruit_bme280 import basic as adafruit_bme280
 
 # Create library object using our Bus I2C port
 i2c = busio.I2C(board.SCL, board.SDA)
